@@ -1,1 +1,19 @@
 .header {color: #009900;}
+
+div.references{
+    background-color:honeydew;
+    width: 800px;
+    padding: 5px;
+    margin: 0;
+    text-indent: 30px;
+}
+
+div.references::first-letter{
+    font-size:1.3rem;
+    font-weight: bold;
+}
+
+.noindent {
+    text-indent: 0px;
+}
+

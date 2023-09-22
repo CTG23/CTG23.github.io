@@ -1,5 +1,31 @@
 .header {color: #009900;}
 
+body {
+    margin: 0% auto; width: 95%; border: 1px solid black;
+}
+
+figure {
+    background-image: url(images/trees.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+    padding: 0;
+}
+
+
+
+
+/*Semantic Grid*/
+
+header {border-bottom: 1px solid black;}
+nav {float: right; border-left: 1px solid black; border-bottom: 1px solid black; width: 50%;}
+main {float: left, top; height: 300px; width: 50%; padding: 0;}
+figure {float: right; height: 300px; width: 50%; padding: 0;}
+footer {border-top: 1px solid black; clear: both;}
+
+
+/*References CSS*/
+
 div.references{
     background-color:honeydew;
     width: 800px;
@@ -7,12 +33,10 @@ div.references{
     margin: 0;
     text-indent: 30px;
 }
-
 div.references::first-letter{
     font-size:1.3rem;
     font-weight: bold;
 }
-
 .noindent {
     text-indent: 0px;
 }

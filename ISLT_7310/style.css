@@ -10,7 +10,7 @@ body {
 
 header {border-bottom: 1px solid black;}
 nav {float: right; padding: 1px; width: 100%; border-bottom: 1px solid black; text-align: right; line-height: 30px;}
-main {float: top; padding: 0;}
+main {padding: 0;}
 figure {float: right;  width: 50%; padding: 0; height: 550px}
 footer {border-top: 1px solid black; clear: both;}
 

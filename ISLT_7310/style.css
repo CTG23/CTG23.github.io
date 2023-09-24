@@ -1,10 +1,72 @@
 .header {color: #009900;}
 
+
 body {
-    margin: 0% auto; width: 95%; border: 1px solid black;
+    margin: 0 auto; width: 100%; height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-figure {
+/*Semantic Grid*/
+
+header {border-bottom: 1px solid black;}
+nav {float: right; padding: 1px; width: 100%; border-bottom: 1px solid black; text-align: right; line-height: 30px;}
+main {float: left, top; padding: 0;}
+figure {float: right;  width: 50%; padding: 0; height: 550px}
+footer {border-top: 1px solid black; clear: both;}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px; 
+    display: none;
+    width: 20px;
+    float: right, top;
+}
+
+#toggle {
+    display: none;
+}
+
+@media only screen and (max-width:640px){
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    nav ul li{
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    nav ul a{
+        display: block;
+        margin: 0;
+        position: relative;
+        padding: 0px;
+    }
+    
+    #toggle:checked + ul li{
+        display: block;
+    }
+    }
+
+
+/*Font Adjustment*/
+
+@media screen and (min-width: 640px){
+    body {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    body {
+        font-size: 16px;
+    }
+}
+
+/*primary images*/
+
+.trees {
     background-image: url(images/trees.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,24 +74,61 @@ figure {
     padding: 0;
 }
 
+.giraffe {
+    background-image: url(images/giraffe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+    padding: 0;
+}
 
+.lake {
+    background-image: url(images/lake.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+    padding: 0;
+}
 
+.windmills {
+    background-image: url(images/windmills.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+    padding: 0;
+}
 
-/*Semantic Grid*/
+/* Hiding primary images on mobile */
 
-header {border-bottom: 1px solid black;}
-nav {float: right; border-left: 1px solid black; border-bottom: 1px solid black; width: 50%;}
-main {float: left, top; height: 300px; width: 50%; padding: 0;}
-figure {float: right; height: 300px; width: 50%; padding: 0;}
-footer {border-top: 1px solid black; clear: both;}
+@media screen and (max-width: 640px){
+    figure.trees{
+        display: none;
+    }
+}
 
+@media screen and (max-width: 640px){
+    figure.lake{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px){
+    figure.giraffe{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px){
+    figure.windmills{
+        display: none;
+    }
+}
 
 /*References CSS*/
 
 div.references{
     background-color:honeydew;
-    width: 800px;
-    padding: 5px;
+    padding: 4px;
     margin: 0;
     text-indent: 30px;
 }

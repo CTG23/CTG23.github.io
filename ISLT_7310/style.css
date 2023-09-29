@@ -30,6 +30,21 @@ label {
     display: none;
 }
 
+/* Hover Zoom For Footer Icons*/
+
+.zoom{
+    padding: 0px;
+    background-color: transparent;
+    transition: transform .2s; 
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5); 
+  }
+
 /* Print Stylesheet */
 
 @media print {

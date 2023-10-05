@@ -15,6 +15,32 @@ figure {float: right;  width: 50%; padding: 0; height: 550px}
 footer {border-top: 1px solid black; clear: both; 
         background-image:url(images/water.jpg); background-size: cover; background-repeat: no-repeat;}
 
+/* Table Style */
+
+table{
+    width: 400px;
+}
+
+th, caption {
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+tr:nth-child(even){
+    background-color: lightgreen;
+}
+
+thead{
+    background-color: lightgreen;
+}
 
 /* Hamburger Nav */
 
@@ -106,6 +132,10 @@ label {
     #toggle:checked + ul li{
         display: block;
     }
+    }
+
+    table {
+        overflow: scroll;
     }
 
 

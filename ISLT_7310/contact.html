@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!--Template page for-->
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>GreenEco</title>
+        <link rel="stylesheet"
+        href="style.css">
+        <link rel="stylesheet"
+        href="nav.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <h1 class="header">GreenEco</h1>
+        <nav>
+            <label class = "dropdown" for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="learn.html">Learn</a>
+                    <ul>
+                        <li><a href="learn.html#climate_change">Climate Change </a></li>
+                        <li><a href="learn.html#individual_action">Individual Action </a></li>
+                        <li><a href="learn.html#policy_shaping">Policy Shaping </a></li>
+                    </ul>
+                </li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+     <main>
+        <figure class="beach"></figure>
+        <h3>Please submit any feedback using the form below. Thank you.</h3>
+        <p>An email app is required to send this information.</p> <br>
+        <form action="mailto:ctgp82@umsystem.edu?Subject=Educational%20Website%20Contact" method="post" enctype="text/plain">
+            <div>
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname" id="fname" placeholder="John" autofocus required>
+            </div>
+            <div>
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="lname" placeholder="Doe" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="example@university.edu" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <input type="text" name="message" id="message" placeholder="Message" required>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+     </main>
+     <footer>   
+        <p>
+        Author: Charlie Garcia <br> 
+        <img class = "zoom" alt = "email" src="images/mail.png" width="30" height="25">
+        ctgp82@umsystem.edu <br>
+        <img class = "zoom" alt = "phone" src="images/phone.png" width="30" height="25">
+        1+888-888-8888 <br>
+        Copyright 2023
+        </p>
+    </footer>
+</body>
+</html>

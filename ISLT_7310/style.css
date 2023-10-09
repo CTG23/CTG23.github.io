@@ -1,15 +1,26 @@
-.header {color: #009900;}
 
+
+.header {color: #009900;}
 
 body {
     margin: 0 auto; width: 99%; height: 100%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #FAF9F6;
 }
 
 form{
     display: inline-block;
     text-align: right;
 }
+
+.learn{
+    width: 50%;
+}
+
+img{
+    margin: 0;
+}
+
 /*Semantic Grid*/
 
 header {border-bottom: 1px solid black;}
@@ -72,7 +83,7 @@ thead{
 }
 
 .zoom:hover {
-    transform: scale(1.5); 
+    transform: scale(1.35); 
   }
 
 /* Print Stylesheet */
@@ -142,6 +153,10 @@ thead{
         overflow: scroll;
     }
 
+    .learn{
+        width: 100%; 
+    }
+
 /*Font Adjustment*/
 
 @media screen and (min-width: 640px){
@@ -158,12 +173,14 @@ thead{
 
 /*primary images*/
 
+
 .trees {
     background-image: url(images/trees.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0%;
     padding: 0;
+    text-align: right;
 }
 
 .giraffe {
@@ -230,7 +247,20 @@ thead{
     padding: 0;
 }
 
-
+.waterfall {
+    background-image: url(images/waterfall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+    padding: 0;
+}
+.valley {
+    background-image: url(images/valley.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+    padding: 0;
+}
 /* Hiding primary images on mobile */
 
 @media screen and (max-width: 640px){
@@ -261,10 +291,10 @@ thead{
     figure.beach{
         display: none;
     }
-}
-
-@media screen and (max-width: 640px){
-    figure.windmills{
+    figure.waterfall{
+        display: none;
+    }
+    figure.valley{
         display: none;
     }
 }
